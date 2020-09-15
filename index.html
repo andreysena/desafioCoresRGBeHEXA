@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link rel="shortcut icon" href="img/color-palette.png">
+        <title>Desafio do RGB (e Hexa)</title>
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
+        <h1>MOVA OS PONTEIROS PARA MUDAR A COR DO QUADRADO:</h1>
+        <div id="global">
+            <div id="divR">
+                <label class="V">R (Red - Vermelho):</label>
+                <div id="inputs">
+                    <input class="inputRange" id="redRange" type="range" min="0" max="255" list="pointList">
+                    <input class="inputNum" id="redInput" type="text" disabled>
+                </div>
+            </div>
+
+            <div id="divG">
+                <label class="G">G (Green - Verde):</label>
+                <div id="inputs">
+                    <input class="inputRange" id="greenRange" type="range" min="0" max="255">
+                    <input class="inputNum" id="greenInput" type="text" disabled>
+                </div>
+            </div>
+
+            <div id="divB">
+                <label class="B">B (Blue - Azul):</label>
+                <div id="inputs">
+                    <input class="inputRange" id="blueRange" type="range" min="0" max="255">
+                    <input class="inputNum" id="blueInput" type="text" disabled>
+                </div>
+            </div>
+        </div>
+        <div id="squareDiv">
+            <p id="hexaText"></p>
+            <p id="rgbText"></p>
+        </div>  
+
+        <script src="./script.js"></script>
+    </body>
+</html>

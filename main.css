@@ -1,0 +1,175 @@
+body{
+    background-color: rgb(31, 109, 96);
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+#global{
+    width: 100%;
+    margin: auto;
+}
+
+#divR, #divG, #divB{
+    margin-top: 5%;
+}
+
+label{
+    font-family: 'Verdana';
+    font-weight: 800;
+    font-size: 20px;
+}
+
+#inputs{
+    float: right;
+}
+
+.inputRange{
+    float: left;
+    width: 465px;
+    margin-right: 15px;
+    background-color: rgb(31, 109, 96);
+}
+
+input[type='range'],
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+#redRange::-moz-range-track{
+    height: 60%;
+    background-color: red;
+    border-radius: 50px;
+    border: 2px solid #000101;
+}
+
+#redRange::-webkit-slider-runnable-track{
+    height: 15px;
+    background-color: red;
+    border-radius: 50px;
+    border: 2px solid #000101;
+}
+
+#greenRange::-moz-range-track{
+    height: 60%;
+    background-color: green;
+    border-radius: 50px;
+    border: 2px solid #000101;
+}
+
+#greenRange::-webkit-slider-runnable-track{
+    height: 15px;
+    background-color: green;
+    border-radius: 50px;
+    border: 2px solid #000101;
+}
+
+#blueRange::-moz-range-track{
+    height: 60%;
+    background-color: blue;
+    border-radius: 50px;
+    border: 2px solid #000101;
+}
+
+#blueRange::-webkit-slider-runnable-track{
+    height: 15px;
+    background-color: blue;
+    border-radius: 50px;
+    border: 2px solid #000101;
+}
+
+input[type=range]::-moz-range-thumb{
+    cursor: grab;
+    height: 30px;
+    width: 10px;
+    border-radius: 7px;
+    background: black;
+}
+
+input[type=range]::-webkit-slider-thumb{
+    cursor: grab;
+    appearance: none;
+    height: 30px;
+    width: 12px;
+    border-radius: 7px;
+    background: black;
+    margin-top: -8px;
+    border: 1pt solid rgba(255, 229, 229, 0.623);
+}
+
+.inputNum{
+    width: 100px;
+    text-align: center;
+}
+
+#squareDiv{
+    background-color: rgb(14, 124, 151);
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 3%;
+    box-shadow: 2px 4px 8px black;
+    border-radius: 10%;
+}
+
+p{
+    font-size: 35px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 82px;
+
+}#rgbText{
+    padding-top: 0px;
+}
+
+@media only screen and (min-width: 1360px) {
+    #global{
+        max-width: 65%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1200px){
+
+    h1{
+        font-size: 25px;
+        margin: 10% 0 10% 0;
+    }
+    #global{
+        max-width: 90%;
+    }
+
+    .inputRange, .inputNum, #inputs{
+        appearance: none;
+    }
+
+    #divR, #divG, #divB{
+
+        text-align: center;
+    }
+
+    #inputs{
+        float: none;
+        margin: 0 auto;   
+    }
+
+    .inputRange{
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .inputNum{
+        font-size: 20px;
+        margin-top: 25px;
+        margin-bottom: 10px; 
+    }
+
+    #rgbText{
+        font-size: 32px;
+    }
+    
+}
